@@ -114,10 +114,9 @@ fn main() {
         av_smell = av_smell.div(creatures.len() as f32);
         
         d.draw_text(&creature_count.to_string(), 10, 10, 20, Color::WHITE);
-        
-        d.draw_text(&av_size.to_string(), 10, 35, 20, Color::WHITE);
-        d.draw_text(&av_speed.to_string(), 10, 60, 20, Color::WHITE);
-        d.draw_text(&av_smell.to_string(), 10, 85, 20, Color::WHITE);
+        d.draw_text(&av_size       .to_string(), 10, 35, 20, Color::WHITE);
+        d.draw_text(&av_speed      .to_string(), 10, 60, 20, Color::WHITE);
+        d.draw_text(&av_smell      .to_string(), 10, 85, 20, Color::WHITE);
         
         d.draw_fps(10, 110);
     }
